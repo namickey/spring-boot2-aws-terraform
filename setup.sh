@@ -12,13 +12,13 @@ sudo yum -y install git
 sudo -u ec2-user git clone https://github.com/namickey/spring-boot2-train.git
 
 # service
-sudo cp /home/ec2-user/spring-boot2-train/run-app.service /etc/systemd/system/
-sudo chown root:root /etc/systemd/system/run-app.service
-sudo chmod 664 /etc/systemd/system/run-app.service
+cp /home/ec2-user/spring-boot2-train/run-app.service /etc/systemd/system/
+chown root:root /etc/systemd/system/run-app.service
+chmod 664 /etc/systemd/system/run-app.service
 
-sudo systemctl daemon-reload
+systemctl daemon-reload
 
-sudo systemctl start run-app.service
+systemctl start run-app.service
 
 # exec setup-ec2
 #sudo -u ec2-user /bin/bash /home/ec2-user/spring-boot2-train/setup-ec2.sh
