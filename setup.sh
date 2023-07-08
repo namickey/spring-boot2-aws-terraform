@@ -1,14 +1,13 @@
 #!/bin/bash
 
-cd /home/ec2-user
-
 # jdk11 install
-sudo yum -y install java-11-amazon-corretto.x86_64
+yum -y install java-11-amazon-corretto.x86_64
 
 # git install
-sudo yum -y install git
+yum -y install git
 
 # clone
+cd /home/ec2-user
 sudo -u ec2-user git clone https://github.com/namickey/spring-boot2-train.git
 
 # service setting
