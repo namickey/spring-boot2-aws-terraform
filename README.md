@@ -97,3 +97,8 @@ https://zenn.dev/oreo2990/articles/bf3112bb6ccb48
 
 【AWS】EC2インスタンスの作成方法解説！サーバーを作成して接続してみる  
 https://engineer-ninaritai.com/aws-ec2-make/  
+
+## 参考サイト
+
+AWS VPCルーティングの基本から発展構成例  
+http://blog.father.gedow.net/2023/07/11/aws-vpc-routing/  
