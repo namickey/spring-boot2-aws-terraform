@@ -102,3 +102,6 @@ https://engineer-ninaritai.com/aws-ec2-make/
 
 AWS VPCルーティングの基本から発展構成例  
 http://blog.father.gedow.net/2023/07/11/aws-vpc-routing/  
+
+AWSコスト削減とリソース管理  
+https://blog.father.gedow.net/2023/08/24/aws-cost-saving/  
