@@ -1,5 +1,5 @@
 resource "aws_instance" "green" {
-  ami                     = "ami-0cfc97bf81f2eadc4"
+  ami                     = "ami-0dfa284c9d7b2adad"
   instance_type           = "t2.micro"
   disable_api_termination = false
   key_name                = "green"
