@@ -1,4 +1,4 @@
-# spring-boot2-aws-terraform
+# spring-boot3-aws-terraform
 
 GitHubからAWSへの自動デプロイに挑戦
 
@@ -46,7 +46,7 @@ Terraformで実施したいことが、手動で実施できること
 ## WEBアプリケーション作成
 今回はEC2インスタンスのみで単独起動できるWEBアプリケーションを作成し、GitHubリポジトリへ格納する  
 今回は以下のspring-bootアプリケーションを使用  
-https://github.com/namickey/spring-boot2-train  
+https://github.com/namickey/spring-boot3-train  
 
 
 ## tfファイル作成
@@ -71,6 +71,8 @@ VPC作成+EC2作成+アプリケーションのビルド～デプロイ～起動
    `http://公開用IPアドレス:8080`
 1. SSH接続確認  
    `ssh -i <pemファイル名> ec2-user@公開用IPアドレス`
+1. `EC2 Instance Connect Endpoint`経由でのSSH接続確認
+   `aws ec2-instance-connect ssh --instance-id インスタンスID --connection-type eice`
 1. destroy
 1. 念のため、AWSコンソールにて結果確認  
    EC2インスタンスが削除されていること  
@@ -89,6 +91,12 @@ https://colabmix.co.jp/tech-blog/terraform-ec2/
 TerraformでEC2インスタンスを構築してみた。（Terraform, AWS, EC2）  
 https://qiita.com/takahashi-kazuki/items/c2fe3d70e3a9490adf64  
 
+> [!NOTE]
+> 2024年2月1日以降、AWSのパブリックIPv4に料金が発生する  
+> https://zenn.dev/not75743/scraps/7c2117d86dfe37  
+>
+> EC2 Instance Connectを使用してプライベートなEC2へ接続する  
+> https://zenn.dev/not75743/articles/c139dc1e99f790  
 
 ## 参考サイト：AWSを手動で構築する場合
 

@@ -115,3 +115,14 @@ resource "aws_security_group_rule" "outbound_all" {
   ]
   security_group_id = aws_security_group.green-sg.id
 }
+
+# 参考：Terraform でEC2 Instance Connect Endpointを作成してみました
+# https://dev.classmethod.jp/articles/ec2-instance-connect-endpoint-by-terraform/
+
+resource "aws_ec2_instance_connect_endpoint" "ece-green" {
+  subnet_id = aws_subnet.pub-1a.id
+  security_group_ids = [aws_security_group.green-sg.id]
+  tags = {
+    Name = "ece-green"
+  }
+}
