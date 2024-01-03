@@ -71,11 +71,15 @@ VPC作成+EC2作成+アプリケーションのビルド～デプロイ～起動
    `http://公開用IPアドレス:8080`
 1. SSH接続確認  
    `ssh -i <pemファイル名> ec2-user@公開用IPアドレス`
-1. `EC2 Instance Connect Endpoint`経由でのSSH接続確認
-   `aws ec2-instance-connect ssh --instance-id インスタンスID --connection-type eice`
+1. `EC2 Instance Connect Endpoint`経由でのSSH接続確認  
+   `aws ec2-instance-connect ssh --instance-id EC2インスタンスID`  
 1. destroy
 1. 念のため、AWSコンソールにて結果確認  
    EC2インスタンスが削除されていること  
+
+> [!TIP]
+> 以下のエラーが発生した場合には、一度手動で`EC2 Instance Connect Endpoint`を作成すると、`CreateServiceLinkedRole`が作成される  
+> `You do not have sufficient access to Create ServiceLinkedRole. Add iam:CreateServiceLinkedRole to your policy and then retry your request.`  
 
 ## 参考サイト：Terraform
 
