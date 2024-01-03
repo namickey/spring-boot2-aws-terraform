@@ -101,6 +101,21 @@ https://qiita.com/takahashi-kazuki/items/c2fe3d70e3a9490adf64
 >
 > EC2 Instance Connectを使用してプライベートなEC2へ接続する  
 > https://zenn.dev/not75743/articles/c139dc1e99f790  
+>
+> AWSのPublic IPv4構成をIPv6に切り替える  
+> https://blog.father.gedow.net/2023/09/04/aws-public-ipv4-to-ipv6/  
+>
+> IPv6オンリーのサブネットとEC2インスタンスを作成出来るようになりました  
+> https://dev.classmethod.jp/articles/ipv6-subnet-ec2/  
+>
+> クラウド環境でのIPv6について（VPC編）  
+> https://techblog.cartaholdings.co.jp/entry/ipv6-in-cloud-vpc-focus  
+>
+> Enabling IPv6 on AWS using Terraform (Part 1)  
+> https://colinbarker.me.uk/blog/2023-02-11-enabling-ipv6-on-aws-using-terraform/  
+>
+> 既存のAWS環境を後からTerraformでコード化する  
+> https://dev.classmethod.jp/articles/aws-with-terraform/  
 
 ## 参考サイト：AWSを手動で構築する場合
 
